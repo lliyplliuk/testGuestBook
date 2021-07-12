@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<messages>
+    <message>
+        <id>1</id>
+        <nameAuthor>&#x410;&#x43B;&#x435;&#x43A;&#x441;&#x430;&#x43D;&#x434;&#x440;</nameAuthor>
+        <timeCreated>1626119960</timeCreated>
+        <timeUpdate>1626122070</timeUpdate>
+        <sesId>b2d2d237bfbf5c396c41b9192d83db5f</sesId>
+        <text>&#x422;&#x435;&#x441;&#x442;&#x438;&#x43C;'&#x441;</text>
+        <answers>
+            <message>
+                <id>3</id>
+                <nameAuthor>&#x41E;&#x43B;&#x43E;&#x43B;&#x43E;&#x448;&#x435;&#x43D;&#x44C;&#x43A;&#x430;qwe
+                </nameAuthor>
+                <timeCreated>1626122552</timeCreated>
+                <sesId>b2d2d237bfbf5c396c41b9192d83db5f</sesId>
+                <text>qweqwe</text>
+            </message>
+        </answers>
+    </message>
+    <message>
+        <id>2</id>
+        <nameAuthor>&#x41E;&#x43B;&#x43E;&#x43B;&#x43E;&#x448;&#x435;&#x43D;&#x44C;&#x43A;&#x430;qwe</nameAuthor>
+        <timeCreated>1626122546</timeCreated>
+        <sesId>b2d2d237bfbf5c396c41b9192d83db5f</sesId>
+        <text>qweqwe</text>
+    </message>
+    <message>
+        <id>4</id>
+        <nameAuthor>&#x41E;&#x43B;&#x43E;&#x43B;&#x43E;&#x448;&#x435;&#x43D;&#x44C;&#x43A;&#x430;qwe</nameAuthor>
+        <timeCreated>1626122985</timeCreated>
+        <timeUpdate>1626122992</timeUpdate>
+        <sesId>b2d2d237bfbf5c396c41b9192d83db5f</sesId>
+        <text>asdasdwer</text>
+    </message>
+</messages>
