@@ -10,10 +10,10 @@ class XML implements ConnectorInterface
 {
     private string $fileName;
 
-    public function __construct(string $fileName = "")
+    public function __construct(string $fileName = '')
     {
         if (empty($fileName))
-            $this->fileName = __DIR__ . "/../XML/XML.xml";
+            $this->fileName = __DIR__ . '/../XML/XML.xml';
         else
             $this->fileName = $fileName;
     }
@@ -37,7 +37,7 @@ class XML implements ConnectorInterface
     {
         $xml = new SimpleXMLElement('<messages/>');
         $this->array_to_xml($arr, $xml);
-        $file = fopen($this->fileName, "w");
+        $file = fopen($this->fileName, 'w');
         fwrite($file, $xml->asXML());
         fclose($file);
     }
@@ -54,14 +54,14 @@ class XML implements ConnectorInterface
                     $subNode = $xml->addChild("$key");
                     $this->array_to_xml($value, $subNode);
                 } else {
-                    $subNode = $xml->addChild("message");
+                    $subNode = $xml->addChild('message');
                     $this->array_to_xml($value, $subNode);
                 }
             } else {
                 if (!is_numeric($key)) {
                     $xml->addChild("$key", "$value");
                 } else {
-                    $xml->addChild("message", "$value");
+                    $xml->addChild('message', "$value");
                 }
             }
         }

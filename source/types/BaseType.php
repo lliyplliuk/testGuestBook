@@ -20,8 +20,8 @@ abstract class BaseType implements BaseTypeInterface
     {
         if (isset($this->variables[$name])) {
             switch ($this->variables[$name]['type']) {
-                case "unixTime":
-                case "integer":
+                case 'unixTime':
+                case 'integer':
                     $this->variables[$name]['value'] = (int)$value;
                     break;
                 default:
@@ -54,8 +54,7 @@ abstract class BaseType implements BaseTypeInterface
             if (!empty($val['value'])) {
                 if (!is_array($val['value'])) {
                     $arr[$index] = $val['value'];
-                }
-                else {
+                } else {
                     $arr[$index] = $this->ArrayToArray($val['value']);
                 }
             }
@@ -74,7 +73,7 @@ abstract class BaseType implements BaseTypeInterface
             if (is_array($value)) {
                 $ret[$index] = $this->ArrayToArray($val);
             } else {
-                if (get_parent_class($value) === "types\BaseType") {
+                if (get_parent_class($value) === 'types\BaseType') {
                     $ret[$index] = $value->asArray();
                 }
             }

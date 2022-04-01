@@ -23,7 +23,7 @@ class Board extends BaseType implements BoardInterface
      * Board constructor.
      * @param string $connector Тип для сохранения данных
      */
-    public function __construct(string $connector = "types\XML")
+    public function __construct(string $connector = 'types\XML')
     {
         session_start();
         $this->connector = new $connector();
@@ -107,7 +107,7 @@ class Board extends BaseType implements BoardInterface
     {
         $sesId = session_id();
         foreach ($arr as $msg) {
-            $msg->sesId = ($msg->sesId === $sesId) ? "1" : "0";
+            $msg->sesId = ($msg->sesId === $sesId) ? '1' : '0';
             if (count($msg->answers) > 0)
                 $this->setChange($msg->answers);
         }

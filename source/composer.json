@@ -14,5 +14,8 @@
       "types\\": "types"
     }
   },
-  "require": {}
+  "require": {
+    "ext-simplexml": "*",
+    "php": ">=7.4"
+  }
 }

@@ -25,7 +25,7 @@ class Msg extends BaseType implements MsgInterface
         ],
         'nameAuthor' => [
             'type' => 'string',
-            'value' => ""
+            'value' => ''
         ],
         'timeCreated' => [
             'type' => 'unixTime',
@@ -37,11 +37,11 @@ class Msg extends BaseType implements MsgInterface
         ],
         'sesId' => [
             'type' => 'string',
-            'value' => ""
+            'value' => ''
         ],
         'text' => [
             'type' => 'string',
-            'value' => "0"
+            'value' => '0'
         ],
         'answers' => [
             'type' => 'array',
@@ -66,10 +66,10 @@ class Msg extends BaseType implements MsgInterface
             self::$maxMsgId = $msg['id'];
         foreach ($msg as $attr => $value) {
             switch ($attr) {
-                case "answers":
+                case 'answers':
                     $this->loadAnswers((array)$value);
                     break;
-                case "sesId":
+                case 'sesId':
                     if ($value === $sesId)
                         $this::$maxMsgTime = $msg['timeCreated'];
                     $this->$attr = $value;
